@@ -1,26 +1,3 @@
-"""
-OASIS-2 MRI Preprocessing — 2D e 3D
-======================================
-Formato input: .hdr/.img (NIfTI paired format)
-
-Struttura attesa:
-    data/immagini/OAS2_RAW_PART1/
-    └── OAS2_0001_MR1/
-        └── RAW/
-            ├── mpr-1.nifti.hdr
-            ├── mpr-1.nifti.img
-            ├── mpr-2.nifti.hdr
-            └── mpr-2.nifti.img
-
-Output:
-    data_preprocessed/
-    ├── slices_2d/
-    │   └── OAS2_0001_MR1.npy   # (224, 224) float32
-    ├── volumes_3d/
-    │   └── OAS2_0001_MR1.npy   # (96, 96, 96) float32
-    └── mri_manifest.csv
-"""
-
 import os
 import numpy as np
 import nibabel as nib
