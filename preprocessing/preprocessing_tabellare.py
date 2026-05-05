@@ -1,29 +1,3 @@
-"""
-Check Allineamento MRI ↔ Tabellare
-=====================================
-Verifica quali MRI ID del CSV tabellare hanno
-la corrispondente cartella MRI in data/immagini/
-e produce un CSV tabellare filtrato solo con i soggetti
-che hanno entrambe le modalità disponibili.
-
-Struttura attesa:
-    Multimodel/
-    ├── data/
-    │   └── immagini/
-    │       └── OAS2_RAW_PART1/
-    │           ├── OAS2_0001_MR1/
-    │           ├── OAS2_0001_MR2/
-    │           └── ...
-    ├── data_preprocessed/
-    │   └── oasis_tabular_preprocessed.csv
-    └── preprocessing/
-        └── check_alignment.py   ← questo script
-
-Output:
-    data_preprocessed/oasis_tabular_aligned.csv
-    (solo sessioni con MRI disponibile)
-"""
-
 import os
 import pandas as pd
 from pathlib import Path
