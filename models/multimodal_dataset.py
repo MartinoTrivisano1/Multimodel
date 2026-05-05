@@ -1,17 +1,3 @@
-"""
-OASIS-2 Multimodal Dataset — PyTorch
-======================================
-Carica le tre modalità per ogni sessione:
-    x_tab  → (8,)            feature tabellari
-    x_2d   → (1, 224, 224)   slice MRI 2D
-    x_3d   → (1, 96, 96, 96) volume MRI 3D
-    y      → 0/1/2           CN / MCI / AD
-
-Uso:
-    from multimodal_dataset import get_dataloaders
-    train_loader, val_loader, test_loader = get_dataloaders()
-"""
-
 import os
 import numpy as np
 import pandas as pd
