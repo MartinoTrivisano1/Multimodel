@@ -1,18 +1,3 @@
-"""
-Early Fusion — Modello Completo Multimodale (v1)
-================================================
-Architettura originale:
-    Encoder 2D  (CNN leggera)    → e_2d  (256,)
-    Encoder 3D  (CNN 3D leggera) → e_3d  (256,)
-    Encoder Tab (MLP)            → e_tab (256,)
-         ↓
-    concat([e_2d, e_3d, e_tab])  → (768,)
-         ↓
-    Classificatore MLP           → logits (3,)
-         ↓
-    CN / MCI / AD
-"""
-
 import torch
 import torch.nn as nn
 
